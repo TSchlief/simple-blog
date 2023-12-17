@@ -1,5 +1,5 @@
 <%- include("partials/header.ejs") %>
-    <section class="main p-color">
+    <section class="main">
         <div class="content">
             <h1>Welcome to PsudoBlog</h1>
             <p>Embark on a journey of exploration and creativity with PsudoBlog – your ultimate destination for a world of fun and fascinating ideas.
@@ -10,7 +10,7 @@
        
         
     </section>
-    <section class="main s-color">
+    <section class="blog">
         <div class="posts">
             <% for(let i = 0; i< posts.length; i++) { %>
                 <%- posts[i].toPostLinkHTML() %>

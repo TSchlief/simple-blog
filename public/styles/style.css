@@ -2,78 +2,74 @@
     --primary-color: #f3e0dc;
     --secondary-color: #FAF2F0;
     --accent-color: #008080;
+    --accent2-color:rgb(4, 61, 61);
     font-size: 1.0em;
-  }
+}
+
 *{
+    font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
     color: black;
 }
 
-
-body {
-    font-family: 'Open Sans', sans-serif;
-    background-color: var(--secondary-color);
-  }
-h3{
-    font-size: 22px;
-}
 h1, h2 {
     font-family: 'Roboto', sans-serif;
 }
 
-h1, h2{
+body {
+    background-color: var(--secondary-color);
+}
+
+h1{
     color: var(--accent-color);
     margin-bottom: 30px;
+    font-size: 2rem;
 }
- a{
+
+h2{
     color: var(--accent-color);
-    margin-bottom: 30px;
-}
-p{
-    margin-bottom: 20px;
+    font-size: 1.4rem
 }
 
 ul{
     list-style: none;
 }
-.head-item{
-    padding: 8px 12px;
-}
+
 a{
     text-decoration: none;  
-    
 }
-.primary{
-    border-radius: 8px;
-    background-color: steelblue;
-}
+
 #header{
     display: flex;
     position: sticky;
-    height: 65px;
+    height: 100px;
+    justify-content: center;
+    background-color: var(--secondary-color);
     justify-content: space-between;
     align-items: center;
-    background-color: var(--secondary-color);
-
-    
-}
-.margin-left-10{
-    padding: 20px;
+    padding: 0 15px;
 }
 
-#home{
-    font-size: 16px;
+#logo{
+    font-size: 18px;
 }
 
-
-#head-nav-list{
+#nav-list{
     display: flex;
-    margin-right: 20px;
+}
+
+#nav-list *{
+    color: var(--accent-color);
+    text-shadow: 1px  1px 1px  var(--primary-color);
+}
+
+#nav-list > li{
+    margin-left: 16px;
 }
 
 #footer{
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -84,14 +80,13 @@ a{
     align-items: center;
     height: 30px;
 }
+
 #footer > p {
     margin:0;
     font-size: 14px;
     color: grey;
 }
-.flex{
-    display: flex;
-}
+
 .center{
     align-items: center;
     justify-content: center;
@@ -101,15 +96,26 @@ a{
     position: relative;
     display: flex;
     justify-content: center;
-    margin: 30px 0;
+    margin-bottom: 30px;
     padding: 15px;
+    background-color: var(--primary-color);
 }
+
+.blog{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    padding: 15px;
+    background-color: var(--secondary-color);
+}
+
 .content{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    flex-basis: 600px;
+    flex-basis: 700px;
     margin: 30px 0;
 }
 
@@ -118,11 +124,21 @@ a{
     flex-direction: column;
     margin-bottom: 20px;
 }
+
 #entry-form > div > label{
     margin-bottom: 5px;
 }
-.delete{
+
+.delete-btn{
     color: rgb(207, 152, 0);
+}
+
+.edit-btn{
+    color: var(--accent-color);
+}
+
+.back-btn{
+    color: var(--accent-color);
 }
 
 .form-button {
@@ -131,21 +147,22 @@ a{
     background-color: var(--accent-color);
     border-radius: 8px;
 }
+
 #entry-form > div > input {
     padding: 6px 12px;
 }
+
 #entry-form > div > select {
     padding: 7px 14px;
 }
+
 .form-border{
     border: 1px solid rgb(189, 186, 186);
     border-radius: 5px;
-
 }
 
 #entry-form > div > textarea {
     margin-bottom: 10px;
-    
     padding: 7px 14px;
 }
 
@@ -154,12 +171,14 @@ a{
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    flex-basis: 600px;
-    margin: 20px 0;
+    flex-basis: 700px;
+    margin: 30px 0;
 }
+
 .post{
     margin-bottom: 55px;
 }
+
 .post > h2{
     margin-bottom: 0;
 }
@@ -169,47 +188,24 @@ a{
 }
 
 .post > p{
-
     margin-top: 0px;
     margin-bottom: 22px;
 }
 .author{
-    font-size: 14px;
+    font-size: 0.7rem;
+    margin-bottom: 25px;
 }
-.post-title{
-    margin-bottom: 0px;
-}
-
 
 @media (min-width: 576px) { 
-    
+    #header{
+        padding: 0 40px;
+    }
     :root{
-     font-size: 1.2em;
+        font-size: 1.4em;
     }
-    .main{
-        margin: 30px 0;
-    }
-    #home{
+
+    #logo{
         font-size: 28px;
     }
 }
 
-
-@media (min-width: 768px) { 
-   
-    .main{
-        margin: 30px 0;
-    }
-}
-.p-color{
-    background-color: var(--primary-color);
-    color: var(--primary-color);
-}
-.s-color{
-    background-color: var(--secondary-color);
-    color: var(--secondary-color);
-}
-.a-color{
-    background-color: var(--accent-color);
-    color: var(--accent-color);
-}

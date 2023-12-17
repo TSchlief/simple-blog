@@ -19,10 +19,10 @@ class Post {
         let date = monthNames[month] + " " + day;
         return `
             <div postid=${this.id} class="post">
-                    <a href="/" ><—back</a>
+                    <a class="back-btn" href="/" ><—back</a>
                     <h3>${this.title}</h3>
                     <p class="author" >Written by: ${this.author} -- ${date}</p>
-                    <a href="/edit?id=${this.id}" >edit</a>  <a href="/delete?id=${this.id}" class="delete">delete</a>
+                    <a class="edit-btn" href="/edit?id=${this.id}" >edit</a>  <a href="/delete?id=${this.id}" class="delete-btn">delete</a>
                     <p>${this.content}</p>
             </div>
         `;
