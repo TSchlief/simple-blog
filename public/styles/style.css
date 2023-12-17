@@ -196,6 +196,10 @@ a{
     margin-bottom: 25px;
 }
 
+.about > p{
+    margin-bottom: 20px;
+}
+
 @media (min-width: 576px) { 
     #header{
         padding: 0 40px;
