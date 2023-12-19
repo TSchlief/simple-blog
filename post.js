@@ -51,7 +51,6 @@ export default class BlogPost{
     }
 
     createPost(req){
-        console.log(req.body)
         let body = req.body;
         let date = new Date();
 
